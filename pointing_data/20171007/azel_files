@@ -1,0 +1,10 @@
+# 022056 -> star at center of rotation (pointing-run data recorded)
+# 022150 -> +10 elev
+# 022227 -> +20 elev
+# 022320 -> +10 azimuth (back to 0 in elev)
+# 022355 -> +20 azimuth
+matcam_20171007-022056.fits
+matcam_20171007-022150.fits
+matcam_20171007-022227.fits
+matcam_20171007-022320.fits
+matcam_20171007-022355.fits
