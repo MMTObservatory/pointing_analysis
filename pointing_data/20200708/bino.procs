@@ -1,13 +1,21 @@
-PROC BINO_20200708
+PROC BINO
     indat "bino_20200708.dat"
     USE IA IE NPAE CA AN AW TF TX
     FIT
+    call A9
+    gc b all_data.ps
     MASK R > 6.0
     FIT
+    call A9
+    gc b mask_r_gt_6.ps
     USE HESA
     FIT
+    call A9
+    gc b add_hesa.ps
     MASK R > 2.0
     FIT
+    call A9
+    gc b masked_hesa.ps
 RETURN
 
 PROC A9   (9 favourite plots for an altaz)
