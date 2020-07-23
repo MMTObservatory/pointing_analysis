@@ -7,6 +7,8 @@ __pycache__/
 *.so
 
 # Distribution / packaging
+*/version.py
+*/cython_version.py
 .Python
 env/
 build/
@@ -20,7 +22,6 @@ lib64/
 parts/
 sdist/
 var/
-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
@@ -43,12 +44,18 @@ htmlcov/
 .cache
 nosetests.xml
 coverage.xml
-*.cover
+*,cover
 .hypothesis/
 
 # Translations
 *.mo
 *.pot
+
+# OS X stuff
+.DS_store
+
+# vscode stuff
+.vscode/
 
 # Django stuff:
 *.log
@@ -63,12 +70,14 @@ instance/
 
 # Sphinx documentation
 docs/_build/
+docs/api
 
 # PyBuilder
 target/
 
-# Jupyter Notebook
+# IPython Notebook
 .ipynb_checkpoints
+.merge_file_*
 
 # pyenv
 .python-version
@@ -76,29 +85,16 @@ target/
 # celery beat schedule file
 celerybeat-schedule
 
-# SageMath parsed files
-*.sage.py
-
 # dotenv
 .env
 
 # virtualenv
-.venv
 venv/
 ENV/
 
 # Spyder project settings
 .spyderproject
-.spyproject
 
 # Rope project settings
 .ropeproject
-
-# mkdocs documentation
-/site
-
-# mypy
-.mypy_cache/
-
-# emacs cruft
-*~
+.tmp

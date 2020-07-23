@@ -1,0 +1,28 @@
+#!/usr/bin/perl
+
+# prep - tpoint conversion
+
+# Tpoint wants:
+# AZ-observ, EL-observ, AZ-raw, EL-raw.
+
+$pfile = "./point_20200708.dat";
+
+open PF,$pfile	or die "Cannot open input file\n";
+
+foreach ( <PF> ) {
+	next if m/^$/;
+	next if m/^#/;
+	chomp;
+	if ( /^AA:/ ) {
+	    @stuff = split;
+	    $azr = 180.0 - $stuff[2];
+	    $elr = $stuff[1];
+	} elsif ( /^TAA:/ ) {
+	    @stuff = split;
+	    $azo = 180.0 - $stuff[2];
+	    $elo = $stuff[1];
+	    print "$azo $elo $azr $elr\n";
+	}
+}
+
+# THE END
