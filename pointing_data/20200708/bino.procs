@@ -1,0 +1,38 @@
+PROC BINO_20200708
+    indat "bino_20200708.dat"
+    USE IA IE NPAE CA AN AW TF TX
+    FIT
+    MASK R > 6.0
+    FIT
+    USE HESA
+    FIT
+    MASK R > 2.0
+    FIT
+RETURN
+
+PROC A9   (9 favourite plots for an altaz)
+    CAPT OFF
+    GC
+    CLRNG OFF
+    PLTZ TL
+    G S A
+    PLTZ TC
+    G Z A
+    PLTZ TR
+    G V A
+    PLTZ CL
+    G S Z
+    PLTZ CC
+    G Z Z
+    PLTZ CR
+    GAM Z
+    PLTZ BL
+    GSCAT A
+    PLTZ BR
+    GSMAP
+    CAPT ON
+    PLTZ BC
+    GDIST
+    CLRNG ON
+    PLTZ
+RETURN
