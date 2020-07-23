@@ -13,7 +13,7 @@ foreach ( <PF> ) {
 	next if m/^$/;
 	next if m/^#/;
 	chomp;
-	if ( /^AA:/ ) {
+	if ( /^RAA:/ ) {
 	    @stuff = split;
 	    $azr = 180.0 - $stuff[2];
 	    $elr = $stuff[1];

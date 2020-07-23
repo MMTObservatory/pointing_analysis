@@ -1,5 +1,5 @@
 PROC BINO
-    indat "bino_20200708.dat"
+    indat "binoraw.dat"
     USE IA IE NPAE CA AN AW TF TX
     FIT
     call A9
