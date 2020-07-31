@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"python.pythonPath": "/Users/tim/conda/envs/py37/bin/python"
+	}
+}
