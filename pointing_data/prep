@@ -5,7 +5,7 @@
 # Tpoint wants:
 # AZ-observ, EL-observ, AZ-raw, EL-raw.
 
-$pfile = "./point_20200708.dat";
+$pfile = $ARGV[0];
 
 open PF,$pfile	or die "Cannot open input file\n";
 
