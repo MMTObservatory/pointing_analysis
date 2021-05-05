@@ -99,3 +99,4 @@ ENV/
 .ropeproject
 .tmp
 *.PS
+.DS_Store
