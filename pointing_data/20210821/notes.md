@@ -1,3 +1,6 @@
+## Observing Notes
+
+```
 1-2 test but too saturated
 3 +50 to -50
 4 -150 to +150 => only caught part
@@ -18,3 +21,5 @@ used offsets of -15 az and +24 alt to reel star into position of CoR from above.
 13 -150 to 150 at elevation of 45 => no background stars
 14 150 to -150 with 350" offsets in az and alt => 1569, 1537
 15 -150 to 150 with 350" offsets at elevation of 77 => 1569, 1537
+```
+

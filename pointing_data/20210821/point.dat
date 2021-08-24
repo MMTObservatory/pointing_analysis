@@ -12,6 +12,7 @@
 ! These data are observed AZ/EL followed by Raw AZ/EL
 ! transformed AZ into tpoint convention (South = 0, East=90)
 MMT Pointing Data from 08/21/2021
+: ALTAZ
 +31 41 19.6 2021 8 21 13.0 741 2608.0 0.75
 192.3860283 77.3484799 -167.2778909 77.3475476
 193.3885168 77.2867019 -166.2755517 77.2857150

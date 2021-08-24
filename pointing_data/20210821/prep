@@ -1,0 +1,28 @@
+#!/usr/bin/perl
+
+# prep - tpoint conversion
+
+# Tpoint wants:
+# AZ-observ, EL-observ, AZ-raw, EL-raw.
+
+$pfile = $ARGV[0];
+
+open PF,$pfile	or die "Cannot open input file\n";
+
+foreach ( <PF> ) {
+	next if m/^$/;
+	next if m/^#/;
+	chomp;
+	if ( /^RAA:/ ) {
+	    @stuff = split;
+	    $azr = 180.0 - $stuff[2];
+	    $elr = $stuff[1];
+	} elsif ( /^TAA:/ ) {
+	    @stuff = split;
+	    $azo = 180.0 - $stuff[2];
+	    $elo = $stuff[1] - 5.9/3600;
+	    print "$azo $elo $azr $elr\n";
+	}
+}
+
+# THE END
