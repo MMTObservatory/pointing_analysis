@@ -11,6 +11,10 @@
 !
 ! These data are observed AZ/EL followed by Raw AZ/EL
 ! transformed AZ into tpoint convention (South = 0, East=90)
+!
+! This data set has a -5.9" offset in EL applied to correct for offset in
+! CoR position in the K&E
+!
 MMT Pointing Data from 08/21/2021
 : ALTAZ
 +31 41 19.6 2021 8 21 13.0 741 2608.0 0.75
